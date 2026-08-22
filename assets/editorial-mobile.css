@@ -245,40 +245,6 @@
   .contact-links {
     margin-top: 2rem;
   }
-
-  /* General marketing surfaces: lighter mobile presentation, while canonical
-     identity/data matrices and forms keep their explicit structural borders. */
-  .feature-grid {
-    gap: 0;
-    border: 0;
-    background: transparent;
-  }
-
-  .feature-card,
-  .feature-card-wide {
-    padding: 2.2rem 0 2.7rem;
-    border: 0;
-    border-top: 1px solid var(--line);
-    background: transparent;
-  }
-
-  .feature-card h3 {
-    margin-top: 2.5rem;
-  }
-
-  .boundary-callout {
-    gap: 1.5rem;
-    padding: 2.25rem 0;
-    border-right: 0;
-    border-left: 0;
-    background: transparent;
-  }
-
-  /* Footer: preserve density but create a cleaner final rhythm. */
-  .footer-main {
-    gap: 2.5rem 2rem;
-    padding-block: 4.25rem;
-  }
 }
 
 @media (max-width: 560px) {
@@ -341,15 +307,5 @@
 
   .contact-inner {
     padding-block: 4.6rem;
-  }
-
-  .footer-main {
-    grid-template-columns: 1fr;
-    gap: 2.75rem;
-    padding-block: 3.75rem;
-  }
-
-  .footer-main > div:first-child {
-    grid-column: auto;
   }
 }
