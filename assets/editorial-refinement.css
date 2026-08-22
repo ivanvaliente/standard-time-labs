@@ -3,8 +3,8 @@
 
   Isolated visual experiment inspired by editorial composition rather than
   product or information-architecture changes. This layer is deliberately
-  imported last so the entire refinement can be rolled back by removing one
-  import from site-polish.css.
+  the final shared cascade layer so the refinement can be rolled back by
+  removing one import from site-polish.css.
 
   Scope:
   - larger, more confident display typography;
@@ -42,14 +42,15 @@
     margin-top: 2.75rem;
   }
 
-  .hero-reference-trace {
+  /* More specific than the homepage-only Reference Trace sheet loaded after the shared CSS. */
+  .hero-home .hero-reference-trace {
     width: min(112%, 39rem);
     min-height: 34rem;
     justify-self: end;
     padding-top: 1.75rem;
   }
 
-  .trace-reference {
+  .hero-home .trace-reference {
     font-size: clamp(3.15rem, 5.4vw, 4.9rem);
   }
 
