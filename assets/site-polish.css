@@ -11,8 +11,10 @@
   Product identity then adds scoped product marks without replacing the
   site-wide Blue Dial Labs corporate masthead. The editorial-refinement layer
   adds the reversible desktop experiment; editorial-mobile translates the same
-  visual principles to the existing stacked mobile layout and can be rolled
-  back independently by removing its single import.
+  visual principles to the existing stacked mobile layout. Product presentation
+  then adds a small final layer for shared mark prominence and mobile portfolio
+  card spacing. Each refinement remains independently reversible by removing its
+  corresponding import.
 */
 @import url("./site-polish-base.css");
 @import url("./brand-v1.css");
@@ -21,6 +23,7 @@
 @import url("./product-identity.css");
 @import url("./editorial-refinement.css");
 @import url("./editorial-mobile.css");
+@import url("./product-presentation-refinement.css");
 
 /* Keep the How It Works preference legend inside its bordered control card. */
 .demo-page .demo-preference-control legend {
