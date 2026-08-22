@@ -10,8 +10,9 @@
   interaction polish without changing the established information architecture.
   Product identity then adds scoped product marks without replacing the
   site-wide Blue Dial Labs corporate masthead. The editorial-refinement layer
-  is an isolated, last-in-cascade visual experiment and can be rolled back by
-  removing its single import.
+  adds the reversible desktop experiment; editorial-mobile translates the same
+  visual principles to the existing stacked mobile layout and can be rolled
+  back independently by removing its single import.
 */
 @import url("./site-polish-base.css");
 @import url("./brand-v1.css");
@@ -19,6 +20,7 @@
 @import url("./visual-precision.css");
 @import url("./product-identity.css");
 @import url("./editorial-refinement.css");
+@import url("./editorial-mobile.css");
 
 /* Keep the How It Works preference legend inside its bordered control card. */
 .demo-page .demo-preference-control legend {
