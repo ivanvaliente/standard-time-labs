@@ -1,50 +1,53 @@
 /*
   Blue Dial Labs — Product Presentation Refinement
 
-  Small, reversible presentation layer for two focused adjustments:
-  - give stacked product cards on the Home and Products pages a little more
+  Reversible presentation layer for two focused adjustments:
+  - give stacked product cards on the Home and Products pages unmistakable
     separation on mobile/tablet;
-  - increase WristOwl and WristAtlas mark prominence everywhere the shared
-    product lockups appear.
+  - make WristOwl and WristAtlas marks read as product identities rather than
+    supporting icons everywhere the shared product lockups appear.
 
   Rollback: remove this file's import from site-polish.css.
 */
 
-/* Shared product marks: increase visual presence without changing lockup copy. */
+/* Shared product marks: materially increase visual presence while preserving
+   the approved wordmark/descriptor lockup and surrounding page structure. */
 .wristatlas-product-mark,
 .wristowl-product-mark {
-  width: clamp(5.6rem, 8vw, 7rem);
+  width: clamp(6.75rem, 9.5vw, 8.5rem);
 }
 
 .product-card-mark {
-  width: clamp(4.5rem, 7vw, 5.75rem);
+  width: clamp(5.25rem, 8vw, 6.5rem);
 }
 
 @media (max-width: 800px) {
-  /* Home + Products portfolio sections only; contact-audience cards stay intact. */
+  /* Home + Products portfolio sections only; contact-audience cards stay intact.
+     The previous 1.25rem gap still read as a divider. A 3rem pause makes the
+     transition between products visually explicit. */
   .audience-section:not(.contact-audience-section) .audience-grid {
-    row-gap: 1.25rem;
+    row-gap: 3rem;
   }
 }
 
 @media (max-width: 680px) {
   .wristatlas-product-mark,
   .wristowl-product-mark {
-    width: 5rem;
+    width: 6.25rem;
   }
 
   .product-card-mark {
-    width: 4.6rem;
+    width: 5.5rem;
   }
 }
 
 @media (max-width: 390px) {
   .wristatlas-product-mark,
   .wristowl-product-mark {
-    width: 4.4rem;
+    width: 5.5rem;
   }
 
   .product-card-mark {
-    width: 4.2rem;
+    width: 4.9rem;
   }
 }
