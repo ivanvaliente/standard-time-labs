@@ -1,0 +1,50 @@
+/*
+  Blue Dial Labs — Product Presentation Refinement
+
+  Small, reversible presentation layer for two focused adjustments:
+  - give stacked product cards on the Home and Products pages a little more
+    separation on mobile/tablet;
+  - increase WristOwl and WristAtlas mark prominence everywhere the shared
+    product lockups appear.
+
+  Rollback: remove this file's import from site-polish.css.
+*/
+
+/* Shared product marks: increase visual presence without changing lockup copy. */
+.wristatlas-product-mark,
+.wristowl-product-mark {
+  width: clamp(5.6rem, 8vw, 7rem);
+}
+
+.product-card-mark {
+  width: clamp(4.5rem, 7vw, 5.75rem);
+}
+
+@media (max-width: 800px) {
+  /* Home + Products portfolio sections only; contact-audience cards stay intact. */
+  .audience-section:not(.contact-audience-section) .audience-grid {
+    row-gap: 1.25rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .wristatlas-product-mark,
+  .wristowl-product-mark {
+    width: 5rem;
+  }
+
+  .product-card-mark {
+    width: 4.6rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .wristatlas-product-mark,
+  .wristowl-product-mark {
+    width: 4.4rem;
+  }
+
+  .product-card-mark {
+    width: 4.2rem;
+  }
+}
